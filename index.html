@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="sorting.css">
+</head>
+<body bgcolor="black">
+    <h1 style="color:white;text-align: center;">Sorting Visualizer</h1>
+    <div class="main-container">
+      <header>
+        <nav class="navbar">
+           <div class="nav-left">
+             <button type="button" class="btn new-array" >New Array</button>
+             <div class="slider-container">
+               <p class="slider-text">array size</p>
+               <input class="array_size slider-input" type="range" min=2 max=40 step=1 value=10>
+             </div>
+             <div class="slider-container">
+               <p class="slider-text">speed</p>
+               <input class="speed slider-input" type="range"  min=100 max=3000 step=100 value=1000>
+             </div>
+           </div>
+           <div class="nav-right">
+               <button type="button" class="btn bubble-sort" >Bubble sort</button>
+               <button type="button" class="btn insertion-sort" >Insertion sort</button>
+               <button type="button" class="btn selection-sort" >Selection sort</button>
+               <button type="button" class="btn merge-sort" >Merge sort</button>
+           </div>
+        </nav>
+      </header>
+    </div>
+    
+    
+      <div class="bar-container"></div> 
+    
+      <script src="sorting.js"></script>
+      <script src="common.js"></script>
+      <script src="bubblesort.js"></script>
+      <script src="insertionsort.js"></script>
+      <script src="slectionsort.js"></script>
+      <script src="mergwsort.js"></script>
+</body>
+</html>
